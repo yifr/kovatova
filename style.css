@@ -1,0 +1,126 @@
+
+.link{
+	padding: 20px;
+    font-size: 10px;
+    width: 75px;
+    height: 75px;
+    text-align: top;
+    border-radius: 60%;
+    border: 1px;
+    border-style: solid;
+   }
+.middle {
+  	transition: .5s ease;
+  	opacity: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%)
+}
+.link:hover{
+  opacity: 0.3;
+}
+.link:hover .middle {
+  opacity: 1;
+}
+.text {
+ 	position: absolute;
+ 	background: black;
+  	color: white;
+  	font-size: 20px;
+  	font-family: calibri;
+  	opacity: 1;
+}
+.circle-container {
+	position: relative;
+	width: 28em;
+	height: 28em;
+	padding: 2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+	border-radius: 50%;
+	margin: 1.75em auto 0;
+}
+.center {
+	position: absolute;
+	width: 400px; height: 200px;
+	top: 40%; 
+	left: 30%; 
+	margin-top: -50px;
+	margin-left: -90px;
+}
+.circle-container .link {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 8em; height: 8em;
+	margin: -4em; /* 2em = 4em/2 */ /* half the width */
+}
+
+/*
+**Videos: 90 deg;
+**Music: 45 deg; (or 30/330)
+**Merch: 315 deg;
+**Home: 270 deg;
+**About: 225 deg;
+**Shows: 135 deg;
+*/
+.circle-container img { display: block; width: 100%; }
+.music { transform: rotate(340deg) translate(28em) rotate(-340deg); }
+.merch { transform: rotate(-340deg) translate(28em) rotate(340deg); }
+.shows { transform: rotate(-200deg) translate(28em) rotate(200deg); }
+.about { transform: rotate(200deg) translate(28em) rotate(-200deg); }
+.videos { transform: rotate(270deg) translate(20em) rotate(-270deg); }
+.home { transform: rotate(-270deg) translate(22em) rotate(270deg); }
+
+
+/*Social media styling */
+.fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.8;
+}
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+	size: 15px;
+}
+.fa-soundcloud {
+	background: #ff5500;
+	color: white;
+}
+.fa-spotify {
+	background: black;
+	color: #1db954;
+}
+.fa-youtube {
+	background: #FF0000;
+	color: white;
+}
+.fa-bandcamp{
+	background: black;
+	color: white;
+}
+
+/***********************/
+
+.social-media{
+	position: relative;
+	left: 50%;
+	margin-left: -100px;
+	size: 20px;
+	font-family: sans-serif;
+}
+.contact{
+	font-family: sans-serif;
+	font-size: 25px;
+	position: absolute;
+	left-margin: -50px;
+	left: 48%;
+}
